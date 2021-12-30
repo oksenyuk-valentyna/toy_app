@@ -1,6 +1,11 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+# Bootstrap
+gem 'bootstrap', '~> 4.0.0'
+gem 'jquery-rails'
+gem 'autoprefixer-rails', '~> 8.6', '>= 8.6.5'
+
 ruby '2.7.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -37,6 +42,7 @@ gem 'rubocop', '~> 1.23'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
